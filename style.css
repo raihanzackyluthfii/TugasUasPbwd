@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: League Spartan;
+}
+
+@font-face {
+    font-family: League Spartan;
+    src: url(font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* NAVBAR */
+nav {
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.2);
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to top right, #2A61AD, #5ABCE8);
+    overflow: hidden;
+    font-size: 20px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 8rem;
+}
+
+.nav-left{
+    float: left;
+    overflow: hidden;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-left img{
+    padding: 16px 0;
+}
+
+.nav-right{
+    float: right;
+    padding: 12px 0;
+    margin: 30px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-right a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #FCFEFF;
+    padding: 10px 12px;
+}
+
+.nav-right a:hover{
+    background-color: #5ABCE8;
+    border-radius: 12px;
+}
+
+.nav-right input{
+    text-decoration: none;
+    text-align: center;
+    color: #FCFEFF;
+    padding: 10px 12px;
+}
+
+.nav-right input:hover{
+    background-color: #5ABCE8;
+    border-radius: 12px;
+}
+
+.active{
+    background-color: #5ABCE8;
+    border-radius: 12px;
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+.dl{
+    border: 2px solid #5ABCE8;
+    border-radius: 12px;
+}
+
+/* Logo */
+li img{
+    width: 70px;
+}
+
+/* Header */
+header{
+    overflow: hidden;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header img{
+    border-radius: 12px;
+    width: 81%;
+}
+
+/* Main */
+main{
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+    margin: 15px 12%;
+}
+
+/* Selamat Datang */
+.selamatDatang{
+    overflow: hidden;
+    padding: 6.4rem 0;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+.selamatDatang h1{
+    font-size: 55px;
+    padding: 0 0 5px 0;
+    color: #2A61AD;
+}
+
+.selamatDatang p{
+    font-size: 20px;
+}
+
+/* Card */
+.maincard{
+    justify-items: center;
+    font-size: 20px;
+}
+
+.card{
+    margin-top: 0px;
+    display: flex;
+}
+
+.card .image{
+    float: left;
+}
+
+.card .image img{
+    width: 350px;
+    margin-right: 25px;
+    border-radius: 12px;
+}
+
+.card .content{
+    padding: 140px 0;
+    text-align: left;
+}
+
+.card .content h1{
+    color: #2A61AD;
+}
+
+/* Card2 */
+.card2{
+    display: flex;
+}
+
+.card2 .content{
+    padding: 140px 25px 160px 0;
+    text-align: right;
+}
+
+.card2 .content h1{
+    color: #2A61AD;
+}
+
+.card2 .image{
+    float: right;
+}
+
+.card2 .image img{
+    width: 350px;
+    border-radius: 12px;
+}
+
+/* Form Login */
+
+.bodylogin{
+    background: linear-gradient(to top right, #2A61AD, #5ABCE8, #FCFEFF);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    padding: 100px;
+}
+
+.cardlogin{
+    padding: 50px;
+    background: linear-gradient(to right, #fff6cc, #FCFEFF, #FCFEFF );
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px 8px rgba(0,0,0,.2);
+}
+
+.cardlogin img{
+    width: 65%;
+}
+
+.cardlogin .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: none;
+    justify-content: center;
+}
+
+.cardlogin h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: #2A61AD;
+}
+
+.cardlogin td{
+    padding: 5px;
+}
+
+.cardlogin p{
+    padding: 6px;
+    text-align: center;
+}
+
+.cardlogin a{
+    text-decoration: none;
+    color: #2A61AD;
+}
+
+.cardlogin td input{
+    padding: 0 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.cardlogin p input{
+    border-radius: 6px;
+    height: 30px;
+    width: 100%;
+    color: #FCFEFF;
+    font-size: large;
+    background-color: #2A61AD;
+    border: none;
+}
+
+.cardlogin p input:hover{
+    background-color: #1050aa;
+}
+
+/* Form Daftar */
+.bodydaftar{
+    background: linear-gradient(to top right, #2A61AD, #5ABCE8, #FCFEFF);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 35px;
+}
+
+.maindaftar{
+    justify-items: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.carddaftar{
+    padding: 50px;
+    background: linear-gradient(to right, #fff6cc, #FCFEFF, #FCFEFF );
+    overflow: hidden;
+    display: flex;
+    flex-direction: nowrap;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px 8px rgba(0,0,0,.2);
+}
+
+.carddaftar img{
+    width: 65%;
+}
+
+.carddaftar .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    float: none;
+    justify-content: center;
+}
+
+.carddaftar h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: #2A61AD;
+}
+
+.carddaftar td{
+    padding: 5px;
+}
+
+.carddaftar p{
+    padding: 6px;
+    text-align: center;
+}
+
+.carddaftar a{
+    text-decoration: none;
+    color: #2A61AD;
+}
+
+.carddaftar td input{
+    padding: 0 10px;
+    width: 200px;
+    height: 25px;
+    border-radius: 8px;
+    font-size: medium;
+}
+
+.carddaftar p input{
+    border-radius: 6px;
+    height: 30px;
+    width: 100%;
+    color: #FCFEFF;
+    font-size: large;
+    background-color: #2A61AD;
+    border: none;
+}
+
+.carddaftar p input:hover{
+    background-color: #1050aa;
+}
+
+/* Produk */
+.mainformproduk{
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 32px;
+    margin-top: -100px;
+}
+
+.formproduk{
+    display: flex;
+    float: left;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 30px 0;
+    font-size: large;
+}
+
+.formproduk h1{
+    color: #1050aa;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.formproduk td{
+    padding: 6px;
+}
+
+.formproduk input{
+    width: auto;
+    height: 30px;
+    padding: 4px;
+    text-align: left;
+}
+
+.formproduk a{
+    width: auto;
+    height: 30px;
+    padding: 4px;
+    text-align: left;
+}
+
+.formproduk .btn1{
+    background-color: #1050aa;
+    color: #FCFEFF;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+}
+
+.btn1{
+    background-color: #1050aa;
+    color: #FCFEFF;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+}
+
+.formproduk .btn2{
+    background-color: #fa2727;
+    color: #FCFEFF;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    padding: 11.5px;
+}
+
+.formproduk select{
+    width: auto;
+    height: 30px;
+    padding: 4px;
+    text-align: left;
+}
+
+.ilusproduk{
+    float: right;
+    padding: 20px;
+}
+
+.daftarproduk{
+    margin-left: 0px;
+    overflow: hidden;
+    width: 100%;
+    font-size: large;
+    padding: 30px 0;
+}
+
+.daftarproduk table{
+    width: 100%;
+    text-align: center;
+}
+
+.daftarproduk table td{
+    padding: 11.5px;
+}
+
+.daftarproduk tr{
+    border-collapse: collapse; 
+}
+
+.daftarproduk .head td{
+    background-color: #5ABCE8;
+
+}
+
+.daftarproduk .content1{
+    background-color: #FFF6CC;
+}
+
+.daftarproduk .content2{
+    background-color: #FCFEFF;
+}
+
+
+.daftarproduk .hapus{
+    text-decoration: none;
+    background-color: #fa2727;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    padding: 8px;
+    color: white;
+}
+
+.daftarproduk .edit{
+    text-decoration: none;
+    background-color: #2A61AD;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+.daftarproduk .actiondp{
+    padding: 0 45px;
+}
+
+.formkontak{
+    border: 1px solid;
+    border-radius: 12px;
+    margin: 30px 0;
+    display: flex;
+}
+
+.formkontak .left{
+    float: left;
+    padding: 30px;
+}
+
+.formkontak .left td{
+    padding: 8px;
+}
+
+.formkontak .left input{
+    padding: 5px;
+    width: auto;
+    height: 25px;
+    font-size: large;
+}
+
+.formkontak .left textarea{
+    height: 150px;
+    width: 100%;
+}
+
+.formkontak .left input[type=submit]{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #2A61AD;
+    background-color: #1050aa;
+    color: white;
+    border-radius: 12px;
+    font-size: large;
+}
+
+.formkontak .right{
+    background-color: #2A61AD;
+    padding: 80px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.formkontak .right h1{
+    text-align: left;
+}
+
+.formkontak .right td{
+    padding: 8px;
+}
+
+.formkontak .judul{
+    font-size: larger;
+    border-bottom: 1px solid;
+}
+
+/* Footer */
+footer{
+    padding: 50px 0;
+    border-radius: 12px 12px 0px 0px;
+    background: linear-gradient(to top right, #2A61AD, #5ABCE8);
+    justify-items: center;
+    color: white;
+}
+
+footer input{
+    padding: 20px;
+    justify-content: center;
+}
